@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+    <title>Xiaomi E-Commerce</title>
+</head>
+<body class="animate__animated animate__animate__fadeIn">
+   <div class="nav-container">
+    <nav class="navbar">
+        <h1 class="navbar-logo animate__animated animate__zoomIn">Xiaomi Store</h1>
+        <h1 class="ver-carrito animate__animated animate__zoomIn" id="verCarrito">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+              </svg>
+              <span id="cantidadCarrito" class="cantidad-carrito animate__animated animate__zoomIn"></span>
+        </h1>
+    </nav>
+   </div>
+   
+   <div class="banner animate__animated animate__zoomIn">
+    <div class="banner-container">
+        <h1 class="animate__animated animate__lightSpeedInRight">Telefonía celular</h1>
+        <p class="animate__animated animate__lightSpeedInLeft">Una marca en la que podés confiar</p>
+    </div>
+   </div>
+
+   <div id="shopContent" class="shop-content"></div>
+   
+   <div id="modal-container" class="modal-container animate__animated animate__pulse"></div>
+   <div id="modal-container-compra" class="modal-container animate__animated animate__pulse"></div>
+
+
+   <script src="productos.js"></script>
+   <script src="apps.js"></script>
+   <script src="carrito.js"></script>
+</body>
+</html>

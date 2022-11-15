@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import 'animate.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+ body{
+    margin: 0px;
+  }
+  
+
+
+ .nav-container{
+    position: sticky;
+    z-index: 3;
+    top: 0;
+  }
+
+ .navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    background-color: rgb(238, 166, 99);
+  }
+
+ .navbar-logo{
+    font-size: 30px;
+    justify-self: start;
+    margin-left: 20px;
+    color: white;
+    margin-top: 4vh;
+    cursor: pointer;
+  }
+
+ .ver-carrito{
+    font-size: 25px;
+    margin-right: 40px;
+    margin-top: 3.5vh;
+    cursor: pointer;
+}
+
+
+
+.banner{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://www.wallpaperflare.com/static/379/77/212/xiaomi-logo-wallpaper.jpg");
+}
+
+
+.banner-container{
+    text-align: center;
+    padding: 15% 0;
+}
+
+.banner h1{
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 62px;
+    font-weight: bolder;
+}
+
+.banner p{
+    font-size: 30px;
+    color: white;
+    opacity: 0.7;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.shop-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color:#c3b5b0;
+    max-width: 300px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.card > img{
+    width: 90%;
+    height: 250px;
+}
+
+.price{
+    color: rgb(223, 17, 17);
+    font-size: 22px;
+    font-weight: 800;
+}    
+
+.card button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(223, 113, 62);
+    opacity: 0.8;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover{
+    opacity: 0.5;
+}
+
+
+
+.modal-container{
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: white;
+    background-color: rgb(68, 68, 67);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar{
+    display: none;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.modal-header-title{
+    justify-self: start;
+}
+
+.modal-header-button{
+    cursor: pointer;
+}
+
+.modal-container > .modal-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modal-container > div > img{
+    height: 120px;
+    width: 120px;
+}
+
+.total-content{
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+.delete-product{
+    cursor: pointer;
+}
+
+.cantidad-carrito{
+    background-color: hsl(21deg 100% 52%);
+    color: white;
+    border-radius: 5rem;
+    font-size: 12px;
+    padding: 5px;
+    top: 32px;
+    right: 36px;
+    position: absolute;
+    display: none;
+}
