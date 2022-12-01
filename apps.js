@@ -5,7 +5,7 @@ const modalContainerCompra = document.getElementById("modal-container-compra");
 const cantidadCarrito = document.getElementById("cantidadCarrito");
 
 
-//const URL = 'https://638794acd9b24b1be3f4c76c.mockapi.io/api/v1/productos';
+
 const URL = './productos.json';
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
