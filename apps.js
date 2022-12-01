@@ -5,45 +5,53 @@ const modalContainerCompra = document.getElementById("modal-container-compra");
 const cantidadCarrito = document.getElementById("cantidadCarrito");
 
 
+//const URL = 'https://638794acd9b24b1be3f4c76c.mockapi.io/api/v1/productos';
+const URL = './productos.json';
+
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-productos.forEach((product)=> {
-    let content = document.createElement("div");
-    content.className = "card";
-    content.innerHTML = `
-      <img src="${product.img}">
-      <h3>${product.nombre}</h3>
-      <p class="price">$ ${product.precio}</p>
-    `;
 
-    shopContent.append(content);
+fetch(URL)
+.then((res) => res.json())
+.then((data) => {
+  data.forEach((product)=> {
+      let content = document.createElement("div");
+      content.className = "card";
+      content.innerHTML = `
+        <img src="${product.img}">
+        <h3>${product.nombre}</h3>
+        <p class="price">$ ${product.precio}</p>
+      `;
 
-    let comprar = document.createElement("button")
-    comprar.innerText = "Agregar producto";
-    comprar.className = "comprar";
+      shopContent.append(content);
 
-    content.append(comprar);
+      let comprar = document.createElement("button")
+      comprar.innerText = "Agregar producto";
+      comprar.className = "comprar";
 
-    comprar.addEventListener("click", () =>{
-        const repeat = carrito.some((repeatProduct) => repeatProduct.id === product.id);
-      if (repeat){
-        carrito.map((prod) =>{
-            if(prod.id === product.id){
-                prod.cantidad++;
-            }
-        });
-      } else {
-        carrito.push({
-            id: product.id,
-            img: product.img,
-            nombre: product.nombre,
-            precio: product.precio,
-            cantidad: product.cantidad,
-        });
-        contadorCarrito();
-        guardarLocal();
-    }
-    });
+      content.append(comprar);
+
+      comprar.addEventListener("click", () =>{
+          const repeat = carrito.some((repeatProduct) => repeatProduct.id === product.id);
+        if (repeat){
+          carrito.map((prod) =>{
+              if(prod.id === product.id){
+                  prod.cantidad++;
+              }
+          });
+        } else {
+          carrito.push({
+              id: product.id,
+              img: product.img,
+              nombre: product.nombre,
+              precio: product.precio,
+              cantidad: product.cantidad,
+          });
+          contadorCarrito();
+          guardarLocal();
+      }
+      });
+  })
 });
 
 const guardarLocal = () => {

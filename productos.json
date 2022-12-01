@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "nombre": "Redmi 10 2022 4GB/128GB",
+        "precio": 78000,
+        "img": "https://cdn-xiaomi.waugi.com.ar/1749-home_default/redmi-10-2022-carbon-gray-4gb-ram-128gb-rom.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Redmi Note 11 Pro 6GB/128GB",
+        "precio": 142000,
+        "img": "https://cdn-xiaomi.waugi.com.ar/1428-thickbox_default/redmi-note-11-pro-6gb-ram-128gb-rom-graphite-gray.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 3,
+        "nombre": "Redmi Note 11 4GB/128GB",
+        "precio": 75000,
+        "img": "https://cdn-xiaomi.waugi.com.ar/1428-home_default/redmi-note-11-pro-6gb-ram-128gb-rom-graphite-gray.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 4,
+        "nombre": "Redmi Note 11S 6GB/128GB",
+        "precio": 116000,
+        "img": "https://cdn-xiaomi.waugi.com.ar/1423-home_default/redmi-note-11s-6gb-ram-128gb-rom-graphite-gray-.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 5,
+        "nombre": "Xiaomi 11 Lite 6GB/128GB",
+        "precio": 185000,
+        "img": "https://cdn-xiaomi.waugi.com.ar/1078-large_default/xiaomi-11-lite-5g-ne-6gb-128gb-bubblegum-blue-.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 5,
+        "nombre": "Xiaomi 11T 8GB/256GB",
+        "precio": 224000,
+        "img": "https://cdn-xiaomi.waugi.com.ar/1655-thickbox_default/xiaomi-11t-8gb-ram-256gb-rom.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 6,
+        "nombre": "Xiaomi 11T Pro 8GB/256GB",
+        "precio": 291000,
+        "img": "https://cdn-xiaomi.waugi.com.ar/1771-home_default/xiaomi-11t-pro-8gb-ram-256gb-rom.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 7,
+        "nombre": "Redmi Note 11 Pro+ 6GB/128GB",
+        "precio": 181000,
+        "img": "https://cdn-xiaomi.waugi.com.ar/1418-home_default/redmi-note-11-pro-5g-6gb-ram-128gb-rom-graphite-gray-.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 8,
+        "nombre": "Redmi Note 10 5G 4GB/128G",
+        "precio": 83000,
+        "img": "https://cdn-xiaomi.waugi.com.ar/568-thickbox_default/redmi-note-10-5g-4gb128gb.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 9,
+        "nombre": "Redmi Note 10 Pro 6GB/128GB",
+        "precio": 143000,
+        "img": "https://cdn-xiaomi.waugi.com.ar/702-thickbox_default/xiaomi-redmi-note-10-pro-6gb128gb.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 10,
+        "nombre": "Redmi Note 8 (2021) 4GB/64GB",
+        "precio": 75000,
+        "img": "https://cdn-xiaomi.waugi.com.ar/1393-thickbox_default/redmi-note-8-2021-4gb-ram-64gb-rom-negro.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 11,
+        "nombre": "Redmi Note 9 4GB/128GB",
+        "precio": 87000,
+        "img": "https://cdn-xiaomi.waugi.com.ar/1824-home_default/xiaomi-redmi-note-9-4gb-ram-128gb-rom.jpg",
+        "cantidad": 1
+    }
+]
